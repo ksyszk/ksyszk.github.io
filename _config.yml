@@ -1,0 +1,20 @@
+# 网站信息
+title: "技术笔记"
+description: "记录 AI 学习与开发实践"
+url: "https://ksyszk.github.io"
+
+# 导航
+navigation:
+  - title: 首页
+    url: /
+  - title: AI学习
+    url: /ai-agent-learning/
+  - title: 归档
+    url: /archive/
+  - title: 关于
+    url: /about/
+
+# 启用 Sass 处理
+sass:
+  sass_dir: assets/css
+  style: compressed

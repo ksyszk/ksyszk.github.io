@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | relative_url }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="{{ '/' | relative_url }}" class="nav-logo">{{ site.title }}</a>
+            <div class="nav-links">
+                <a href="{{ '/' | relative_url }}" class="nav-link">首页</a>
+                <a href="/ai-agent-learning/" class="nav-link">AI 学习</a>
+                <a href="/archive/" class="nav-link">归档</a>
+                <a href="/about/" class="nav-link">关于</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© {{ site.time | date: '%Y' }} {{ site.title }}. 保留所有权利。</p>
+            <p>
+                基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建
+                | 主题由 <a href="https://github.com/yourusername" target="_blank">@yourusername</a> 设计
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
